@@ -2,12 +2,12 @@ from libs.seleniumClass import SeleniumHandler
 from libs.pandasClass import PandasHandler
 import config
 
-def scrape_news(keyword):
+def scrape_news(keyword, filename):
     selenium = SeleniumHandler()
     selenium.open_page(config.NEWS_WEBSITE_URL)
 
     # 데이터 스크래핑
-    data = selenium.scrape_headlines()
+    data = selenium.scrape_headlines(keyword)
     selenium.close()
 
     # 결과 저장
