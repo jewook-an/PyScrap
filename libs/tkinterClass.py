@@ -53,20 +53,28 @@ class NewsApp:
         # 입력값 가져오기
         keyword = self.keyword_entry.get().strip()  # 키워드 입력값 (입력 필드)
         filename = self.filename_entry.get().strip()  # 파일 이름 입력값
+        keywordsavetext = ""
 
         # 입력값 검증
         if not keyword:
             # print("키워드를 입력하세요.")
-            self.result_text.insert(tk.END, "키워드를 입력하세요.\n")
-            return
+            self.result_text.insert(tk.END, "키워드 없이 스크래핑을 시작 합니다.\n")
+            keywordtext = f"키워드 없이 스크래핑 시작..."
+            keywordsavetext = f"키워드 없이 데이터를 {self.file_path}에 저장합니다."
+            # return
+        else:
+            self.result_text.insert(tk.END, "입력된 키워드로 스크래핑을 시작 합니다.\n")
+            keywordtext = f"'{keyword}' 키워드로 스크래핑 시작..."
+            keywordsavetext = f"'{keyword}' 키워드로 데이터를 {self.file_path}에 저장합니다."
+
         if not filename:
             # print("저장 파일 이름을 입력하세요.")
             self.result_text.insert(tk.END, "저장 파일 이름을 입력하세요.\n")
             return
 
         # 스크래핑 함수 호출 (데모를 위해 출력)
-        print(f"키워드: {keyword}")
-        print(f"저장 파일 이름: {filename}.csv")
+        # print(f"키워드: {keyword}")
+        # print(f"저장 파일 이름: {filename}.csv")
 
         # 실제 스크래핑 함수 호출
         # scrape_news(keyword, f"{filename}.csv")
@@ -75,10 +83,11 @@ class NewsApp:
 
         if self.file_path:
             # 스크래핑 함수 호출 및 결과 저장
-            print(f"'{keyword}' 키워드로 데이터를 {self.file_path}에 저장합니다.")
-            scrape_news(keyword, f"{filename}.csv")
+            print(f"{keywordsavetext}")
+            totFilePath = self.file_path + f"/{filename}.csv"
+            scrape_news(keyword, f"{totFilePath}")
 
-            self.result_text.insert(tk.END, f"'{keyword}' 키워드로 스크래핑 시작...\n")
+            self.result_text.insert(tk.END, f"{keywordtext}\n")
             self.result_text.insert(tk.END, "스크래핑 완료!\n")
 
         else:
