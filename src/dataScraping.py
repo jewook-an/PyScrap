@@ -12,6 +12,5 @@ def scrape_news(keyword, filename):
 
     # 결과 저장
     # PandasHandler.save_to_csv(data, config.OUTPUT_CSV)
-    # print(f"스크래핑 완료. 결과가 {config.OUTPUT_CSV}에 저장되었습니다.")
     PandasHandler.save_to_csv(data, filename)
     print(f"스크래핑 완료. 결과가 {filename}에 저장되었습니다.")
