@@ -6,8 +6,9 @@ import time
 class NewsApp:
     def __init__(self):
 
-        self.root = tk.Tk()                 # Tkinter 윈도우 객체 생성
-        self.root.title("뉴스 스크래핑")     # 상단(윈도우) Title
+        self.root = tk.Tk()                        # Tkinter 윈도우 객체 생성
+        self.root.title("뉴스 스크래핑")            # 상단(윈도우) Title
+        self.root.geometry("800x600+100+100")      # geometry("가로x세로+x좌표+y좌표")
 
         # UI 구성 요소 추가 : .pack() > 창에 표시하는 역할 > grid 와 pack 는 함께 쓰지 못함
         l1 = tk.Label(self.root, text="키워드:")  # 키워드 입력 설명 라벨
