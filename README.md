@@ -1,28 +1,51 @@
 ## Tkinter, Selenium 을 활용한 UI, DatabScraping
 
-1. UI
- - ㅁ
- - ㅁ
+## UI
+ **- 기본 UI**
 
-2. 기능
- - ㅁ
- - ㅁ
+![UI600](https://github.com/user-attachments/assets/7acc15b2-b1f5-4a87-8bdb-d001b80e9b3a)
+1. 언론사 Selectbox (현재 구현 : SPOTV, NaverSport, DaumSport)
+2. 기사 필터링용 TEXT
+3. 저장 File 명 (현 CSV만 지원)
+4. 진행 Progress Bar
+5. 진행 Log 창
+6. 파일 저장 경로 설정
+7. 스크래핑 시작 
 
-3. 프로세스
- - ㅁ
- - ㅁ
+ **- 언론사 선택 (SPOTV, NaverSport, DaumSport)**
 
-4. 결과물
- - ㅁ
- - ㅁ
+![001](https://github.com/user-attachments/assets/069949ab-9540-49c3-bdd1-6b1af4e2190d)
+
+ **- 키워드 입력, 파일명 입력, 파일저장경로 선택, 스크래핑 시작 버튼 클릭**
+
+![002](https://github.com/user-attachments/assets/223498e1-a23f-417d-9134-9d72edb7fcba)
+
+ **- 지정된 언론사 뉴스창을 띄워 Scrapping 을 시작**
+ 
+ ![003](https://github.com/user-attachments/assets/b1efa973-79e8-42b5-b972-1c237730edf4)
+ 
+ **- 키워드 등록시 해당 키워드로 필터링, 키워드 없을땐 기사 스크랩**
+
+ ![004](https://github.com/user-attachments/assets/09e04986-5532-43ec-8edf-71421a03f97f)
+
+ ![004-1](https://github.com/user-attachments/assets/8bfc2909-1798-4250-a659-21e21b9a8a98)
+
+ **- 지정 경로에 파일 저장**
+
+ ![005](https://github.com/user-attachments/assets/dd8015bc-8305-4a55-87a2-4666a70f7026)
+ 
+ **- 파일 확인**
+
+ ![006](https://github.com/user-attachments/assets/65645c5f-8de1-4a8d-91f4-7f3b7bcd550f)
+ 
 
 ## 1. 기능
 
 ### 1.1 핵심 기능
 - 웹 페이지 크롤링 및 데이터 추출
-- 다양한 웹사이트 지원 (구직사이트, 뉴스, 쇼핑몰 등)
+- 다양한 웹사이트 지원 가능 (구직사이트, 뉴스, 쇼핑몰 등)
 - 데이터 저장 및 내보내기 (CSV, JSON 형식)
-- 자동화된 스크래핑 스케줄링
+- 자동화된 스크래핑 스케줄링 (구현 예정)
 
 ### 1.2 부가 기능
 - 멀티스레딩 지원
