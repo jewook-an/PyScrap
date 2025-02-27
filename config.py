@@ -12,5 +12,5 @@ LOG_FILE = "scraper.log"
 MEDIA_SOURCES = {
     "SPOTV": "https://www.spotvnews.co.kr/",
     "NaverSports": "https://sports.news.naver.com/index",
-    "언론사3": "https://newswebsite3.com"
+    "DaumSports": "https://sports.daum.net/news"
 }

@@ -18,13 +18,13 @@ class SeleniumHandler:
         # 모든 헤드라인 데이터를 우선 수집 : 언론사에 따라 다른 CSS 셀렉터 사용
         if media == "SPOTV":
             headlines = self.driver.find_elements(By.CSS_SELECTOR, 'a.auto-valign')
-            data = [{'title': h.text, 'link': h.get_attribute('href')} for h in headlines]
+            data = [{'title': h.text.replace('"', '').replace("'", ""), 'link': h.get_attribute('href')} for h in headlines]
         elif media == "NaverSports":
             headlines = self.driver.find_elements(By.CSS_SELECTOR, 'a.link_today')
-            data = [{'title': h.get_attribute('title'), 'link': h.get_attribute('href')} for h in headlines]
-        elif media == "언론사3":
-            headlines = self.driver.find_elements(By.CSS_SELECTOR, 'a.headline')
-            data = []
+            data = [{'title': h.get_attribute('title').replace('"', '').replace("'", ""), 'link': h.get_attribute('href')} for h in headlines]
+        elif media == "DaumSports":
+            headlines = self.driver.find_elements(By.CSS_SELECTOR, 'a.link_txt')
+            data = [{'title': h.text.replace('"', '').replace("'", ""), 'link': h.get_attribute('href')} for h in headlines]
         else:
             headlines = []
             data = []
