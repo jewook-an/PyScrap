@@ -10,7 +10,7 @@
 4. 진행 Progress Bar
 5. 진행 Log 창
 6. 파일 저장 경로 설정
-7. 스크래핑 시작 
+7. 스크래핑 시작
 
  **- 언론사 선택 (SPOTV, NaverSport, DaumSport)**
 
@@ -21,23 +21,23 @@
 ![002](https://github.com/user-attachments/assets/223498e1-a23f-417d-9134-9d72edb7fcba)
 
  **- 지정된 언론사 뉴스창을 띄워 Scrapping 을 시작**
- 
- ![003](https://github.com/user-attachments/assets/b1efa973-79e8-42b5-b972-1c237730edf4)
- 
+
+![003](https://github.com/user-attachments/assets/b1efa973-79e8-42b5-b972-1c237730edf4)
+
  **- 키워드 등록시 해당 키워드로 필터링, 키워드 없을땐 기사 스크랩**
 
- ![004](https://github.com/user-attachments/assets/09e04986-5532-43ec-8edf-71421a03f97f)
+![004](https://github.com/user-attachments/assets/09e04986-5532-43ec-8edf-71421a03f97f)
 
- ![004-1](https://github.com/user-attachments/assets/8bfc2909-1798-4250-a659-21e21b9a8a98)
+![004-1](https://github.com/user-attachments/assets/8bfc2909-1798-4250-a659-21e21b9a8a98)
 
  **- 지정 경로에 파일 저장**
 
- ![005](https://github.com/user-attachments/assets/dd8015bc-8305-4a55-87a2-4666a70f7026)
- 
+![005](https://github.com/user-attachments/assets/dd8015bc-8305-4a55-87a2-4666a70f7026)
+
  **- 파일 확인**
 
- ![006](https://github.com/user-attachments/assets/65645c5f-8de1-4a8d-91f4-7f3b7bcd550f)
- 
+![006](https://github.com/user-attachments/assets/65645c5f-8de1-4a8d-91f4-7f3b7bcd550f)
+
 
 ## 1. 기능
 
@@ -105,6 +105,6 @@
 2. 상품 가격 비교
 3. 뉴스 기사 모니터링
 
-jewook-an: @GitHubCopilot 
+jewook-an: @GitHubCopilot
 
 GitHub Copilot: Please provide the conversation details or the specific requirements so that I can assist you with the necessary code edits.
