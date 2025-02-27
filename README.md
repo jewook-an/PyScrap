@@ -1,4 +1,4 @@
-## Tkinter, Selenium 을 활용한 UI, DatabScraping
+## Python(파이썬) Tkinter, Selenium 을 활용한 UI, DatabScraping
 
 ## UI
  **- 기본 UI**
